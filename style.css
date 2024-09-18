@@ -23,8 +23,7 @@ html, body, *{
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-around;
-    margin: 10rem auto;
-    
+    margin: 10rem auto; 
 }
 
 .card{
@@ -39,8 +38,7 @@ html, body, *{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-
+    box-shadow: 30px 30px 30px rgb(121, 109, 109);
 }
 
 .card-img{
@@ -48,15 +46,27 @@ html, body, *{
  height: 45%;
  object-fit: cover;
 }
-.card-header{
 
-    font-size:80px;
+.card-header{
+ font-size:80px;
  margin-top: 1rem;
 }
+
 .card-price{
-    font-size:60px;
+    font-size:60px; 
+}
+
+button{
+transition: all 0.3s;
+}
+
+button:hover{
+    transform: scale(1.2);
     
 }
+
+
+
 
 #skotn{
     background-color: rgb(169,169,169);
