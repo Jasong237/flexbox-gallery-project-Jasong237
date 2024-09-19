@@ -24,9 +24,14 @@ html, body, *{
     align-items: center;
     justify-content:space-around;
     margin: 1rem auto; 
-  /*  background-color: rgb(18, 42, 63); */
-}
 
+}
+@media only screen and (max-width: 900px) {
+.card{
+    margin:10rem 10;
+}
+}
+/* 900 px 2, 300 px 1,*/
 .card{
     height: 30%;
     width: 25%;
@@ -40,6 +45,8 @@ html, body, *{
     align-items: center;
     justify-content: space-around;
     box-shadow: 30px 30px 30px rgb(15, 15, 15);
+    width: auto;
+    height: auto;
 }
 
 .card-img{
