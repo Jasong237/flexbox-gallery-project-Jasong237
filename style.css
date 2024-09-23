@@ -14,6 +14,8 @@ html, body, *{
 .title{
     text-align:center;
     font-size: 100px;
+    font-size: auto;
+    
 }
 
 .container{
@@ -23,30 +25,30 @@ html, body, *{
     flex-wrap: wrap;
     align-items: center;
     justify-content:space-around;
-    margin: 1rem auto; 
+
 
 }
-@media only screen and (max-width: 900px) {
+/* @media only screen and (max-width: 900px) {
 .card{
-    margin:10rem 10;
+
 }
-}
+} */
 /* 900 px 2, 300 px 1,*/
+
 .card{
-    height: 30%;
-    width: 25%;
+    height:700px;
+    width:400px;
     border: 20px solid black;
     background-color:darkgrey;
     border-radius: 20px;
     flex-wrap: wrap;
     display: flex;
-    margin: 8rem 5;
+    margin: 8rem 20;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     box-shadow: 30px 30px 30px rgb(15, 15, 15);
-    width: auto;
-    height: auto;
+
 }
 
 .card-img{
@@ -70,8 +72,40 @@ transition: all 0.3s;
 
 button:hover{
     transform: scale(1.2) translateY(10px);
-    
+    transition-duration: 0.4s;
 }
+.animation{
+    height: 2rem;
+    width: 2rem;
+    animation: container 5s infinite;
+    position: absolute;
+  }
+@keyframes container{
+    0%{
+      left: 50%;
+      bottom: 10%;
+      background-color:red;
+    } 
+    25%{
+      left: 50%;
+      bottom: 10%;
+      background-color:blue;
+      transform: scale(3);
+    }
+      50%{
+        left: 50%;
+        bottom: 10%;
+        background-color:red;
+      } 
+    100%{
+        left: 50%;
+        bottom: 10%;
+        background-color:blue;
+        transform: scale(3);
+      
+    }
+  }
+  
 
 
 
@@ -79,11 +113,41 @@ button:hover{
 #skotn{
     background-image: linear-gradient(135deg,rgb(169,169,169),rgb(91, 91, 91));
 }
+#skotn:hover{
+    animation-name: shine;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+}
+@keyframes shine{
+    0% {background-image: linear-gradient(135deg,rgb(169,169,169),rgb(91, 91, 91));}
+    50% {background-image: linear-gradient(135deg,rgb(0, 0, 0),rgb(91, 91, 91));}
+    100% {background-image: linear-gradient(135deg,rgb(169,169,169),rgb(91, 91, 91));}
+}
 
 #legit{
     background-image: linear-gradient(135deg,rgb(92, 92, 92),rgb(52, 52, 52));
 }
+#legit:hover{
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+  }
+  
+ @keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    25% {
+    transform: rotate(15deg);
+    }
 
+    75% {
+    transform: rotate(-15deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
+}
 #ush{
     background-image: linear-gradient(135deg,rgb(52, 52, 52),rgb(20,20,20));
 }
