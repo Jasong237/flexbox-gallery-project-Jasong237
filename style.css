@@ -2,7 +2,7 @@
 
 html, body, *{
     font-size: 16px;
-    padding: 10;
+    padding: 10px;
     margin: 0;
     text-align: center;
     box-sizing: border-box; /* will not make a box increase w padding */
@@ -13,13 +13,13 @@ html, body, *{
 
 .title{
     text-align:center;
-    font-size: 90px;
-    font-size: auto;
+    font-size: 562.5%;
+
     
 }
 
 .container{
-    width: auto;
+    width: 100%;
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -36,14 +36,15 @@ html, body, *{
 /* 900 px 2, 300 px 1,*/
 
 .card{
-    height:600px;
-    width: 350px;
+    height: 80%;
+    width: 25%;
+    max-width: 350px;
+    max-height: 600px; 
     border: 20px solid black;
     background-color:darkgrey;
     border-radius: 20px;
-    flex-wrap: wrap;
     display: flex;
-    margin: 6rem 20;
+    margin: 6rem 20px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -58,12 +59,12 @@ html, body, *{
 }
 
 .card-header{
- font-size:70px;
+ font-size: 437.5%;
  margin-top: 1rem;
 }
 
 .card-price{
-    font-size:50px;
+    font-size: 312.5%; 
     
 }
 
@@ -80,7 +81,7 @@ button:hover{
     background-image: linear-gradient(135deg,rgb(169,169,169),rgb(91, 91, 91));
     
 }
-#skotn:hover{
+#skotn:hover, #legit:hover, #cf:hover, #ush:hover{
     mask-image: linear-gradient(-75deg, rgb(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
     mask-size: 200%;
     animation: shine 4s infinite;
@@ -90,43 +91,19 @@ button:hover{
     background-image: linear-gradient(135deg,rgb(92, 92, 92),rgba(36,36,36,255));
 }
 
-#legit:hover{
-    
-    mask-image: linear-gradient(-75deg, rgb(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    mask-size: 200%;
-    animation: shine 4s infinite;
-    
-}
-
 #cf{
     background-image: linear-gradient(135deg,rgba(72,72,72,255),rgb(20,20,20));
-}
-
-#cf:hover{
-    
-    mask-image: linear-gradient(-75deg, rgb(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    mask-size: 200%;
-    animation: shine 4s infinite;
-    
 }
 
 #ush{
     background-image: linear-gradient(135deg,rgb(52, 52, 52),rgb(20,20,20));
 }
 
-#ush:hover{
-    
-    mask-image: linear-gradient(-75deg, rgb(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
-    mask-size: 200%;
-    animation: shine 4s infinite;
-    
-}
-
 #pv{
     background-image:linear-gradient(135deg,rgb(239,96,164),rgb(171, 60, 114));
 }
 
-#pv:hover{
+#pv:hover, #sshf:hover, #yum:hover, #madness:hover{
     animation-name: rotate;
     animation-duration: 0.7s;
     animation-iteration-count: 1;
@@ -136,40 +113,23 @@ button:hover{
     background-image:linear-gradient(135deg,rgb(250, 152, 165),rgb(242,109,126));
 }
 
-#sshf:hover{
-    animation-name: rotate;
-    animation-duration: 0.7s;
-    animation-iteration-count: 1;
-  }
 
 #yum{
     background-image:linear-gradient(135deg,rgb(243, 112, 180),rgb(179, 42, 113));
 }
 
-#yum:hover{
-    animation-name: rotate;
-    animation-duration: 0.7s;
-    animation-iteration-count: 1;
-  }
-
 #madness{
     background-image:linear-gradient(135deg,rgba(225,25,69,255),rgba(135,25,69,255));
 }
-
-#madness:hover{
-    animation-name: rotate;
-    animation-duration: 0.7s;
-    animation-iteration-count: 1;
-  }
 
 #frigid{
     background-image:linear-gradient(135deg,rgb(19, 196, 255),rgb(38, 91, 109));
 }
 #frigid:hover #frigidh{
-    font-size:50px;
+    font-size: 312.5%;
 }
 #frigid:hover #frigidp{
-    font-size:30px;
+    font-size: 187.5%;
 }
 #frigid:hover #frigidi{
     display:none;
@@ -183,10 +143,10 @@ button:hover{
 }
 
 #frozen:hover #frozenh{
-    font-size:50px;
+    font-size: 312.5%;
 }
 #frozen:hover #frozenp{
-    font-size:30px;
+    font-size: 187.5%;
     }
 #frozen:hover #frozeni{
     display:none;
@@ -200,10 +160,10 @@ button:hover{
 }
 
 #coldlika:hover #coldlikah{
-    font-size:50px;
+    font-size: 312.5%;
 }
 #coldlika:hover #coldlikap{
-    font-size:30px;
+    font-size: 187.5%;
 }
 #coldlika:hover #coldlikai{
     display:none;
@@ -231,15 +191,11 @@ body:has(#lotf:hover) .card{
     100% {background-color:rgb(18, 42, 63);}
 }
 
-#lotf:hover{
-
-}
-
 
 #mu{
     background-image:linear-gradient(45deg,rgba(225,11,24,255),rgba(126,38,17,255));
 }
-#mu:hover{
+#mu:hover, #alpha:hover, #kappa:hover, #noir:hover{
     animation: scale 0.5s infinite;
 }
 
@@ -247,31 +203,20 @@ body:has(#lotf:hover) .card{
     background-image:linear-gradient(45deg,rgba(9,122,227,255),rgba(7,31,137,255));
 }
 
-#alpha:hover{
-    animation: scale 0.5s infinite;
-}
-
 #kappa{
     background-image:linear-gradient(45deg,rgb(96, 10, 230),rgb(143, 14, 204));
-}
-
-#kappa:hover{
-    animation: scale 0.5s infinite;
 }
 
 #noir{
     background-image:linear-gradient(45deg,rgba(59,59,59,255),rgba(15,15,15,255));
 }
 
-#noir:hover{
-    animation: scale 0.5s infinite;
-}
 
 #madnessh{
-    font-size:59px;
+    font-size: 368.75%;
 }
 #coldlikah{
-    font-size: 55px;
+    font-size: 343.75%;
 }
 
 @keyframes shine{
@@ -305,7 +250,7 @@ body:has(#lotf:hover) .card{
 }
 
 @keyframes scale{
-    0%: {transform: scale(1) translateY(0px);}
+    0% {transform: scale(1) translateY(0px);}
     50% {transform: scale(1.2) translateY(10px);}
     100% {transform: scale(1) translateY(0px);}
 }
