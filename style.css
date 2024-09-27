@@ -1,266 +1,257 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-html, body, *{
-    font-size: 16px;
-    padding: 10px;
+html, body, * {
+    font-size: 10px;
+    padding: 0;
     margin: 0;
-    text-align: center;
     box-sizing: border-box; /* will not make a box increase w padding */
-    /* dont change this */
-    font-family:'Prompt', Courier, monospace;
-
+    /* dont change this */    
+}
+body {
+    font-family: 'Prompt', Courier, monospace;
+    text-align: center;
 }
 
-.title{
-    text-align:center;
-    font-size: 8vw;
+.title {
+    text-align: center;
+    font-size: 120px;
+    padding: 20px;
 }
 
-.background-gradient{
-    background-image:linear-gradient(135deg,rgb(18, 42, 63),rgb(5, 9, 13));
+.background-gradient {
+    background-image: linear-gradient(135deg, rgb(18, 42, 63), rgb(5, 9, 13));
 }
 
-.container{
+.container {
     width: 100%;
-    margin: 2rem auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:space-around;
-
-
+    justify-content: space-around;
 }
 
-
-.card{
-    height:600px;
+.card {
+    height: 600px;
     width: 350px;
     border: 20px solid black;
-    background-color:darkgrey;
+    background-color: darkgrey;
     border-radius: 20px;
     display: flex;
-    margin: 6rem 20;
+    margin: 60px 20px;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
 }
 
-.card-img{
- width: 100%;
- height: 45%;
- object-fit: cover;
+.card-img {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
 }
 
-.card-header{
- font-size: 437.5%;
- margin-top: 1rem;
+.card-header {
+    font-size: 600%;
+    margin-top: 10px;
 }
 
-.card-price{
-    font-size: 312.5%; 
-    
+.card-price {
+    font-size: 400%; 
 }
 
 @media (max-width: 800px) {
     .card {
-        width: 44vw;
-        height: 75vw;
-        border: 2.5vw solid black;
-        margin: 12vw 20px;
+        width: 440px;
+        height: 750px;
+        border: 25px solid black;
+        margin: 120px 20px;
     }
-    .card-header{
-        font-size: 8vw;
-        margin-top: 1rem;
+    .card-header {
+        font-size: 80px;
+        margin-top: 10px;
     }
-    .card-price{
-        font-size: 6vw; 
+    .card-price {
+        font-size: 60px;
     }
-    
 }
 
-@media(min-width: 801px){
-    #madnessh{
+@media (min-width: 801px) {
+    #madnessh {
         font-size: 368.75%;
     }
-    #coldlikah{
+    #coldlikah {
         font-size: 343.75%;
     }
 }
 
-button:hover{
+
+
+button:hover {
     transform: scale(1.2) translateY(10px);
     transition-duration: 0.4s;
 }
 
-#skotn{
-    background-image: linear-gradient(135deg,rgb(169,169,169),rgb(91, 91, 91));
-    
+#skotn {
+    background-image: linear-gradient(135deg, rgb(169, 169, 169), rgb(91, 91, 91));
 }
-#skotn:hover, #legit:hover, #cf:hover, #ush:hover{
-    mask-image: linear-gradient(-75deg, rgb(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+
+#skotn:hover, #legit:hover, #cf:hover, #ush:hover {
+    mask-image: linear-gradient(-75deg, rgb(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
     mask-size: 200%;
     animation: shine 4s infinite;
 }
 
-#legit{
-    background-image: linear-gradient(135deg,rgb(92, 92, 92),rgba(36,36,36,255));
+#legit {
+    background-image: linear-gradient(135deg, rgb(92, 92, 92), rgba(36, 36, 36, 255));
 }
 
-#cf{
-    background-image: linear-gradient(135deg,rgba(72,72,72,255),rgb(20,20,20));
+#cf {
+    background-image: linear-gradient(135deg, rgba(72, 72, 72, 255), rgb(20, 20, 20));
 }
 
-#ush{
-    background-image: linear-gradient(135deg,rgb(52, 52, 52),rgb(20,20,20));
+#ush {
+    background-image: linear-gradient(135deg, rgb(52, 52, 52), rgb(20, 20, 20));
 }
 
-#pv{
-    background-image:linear-gradient(135deg,rgb(239,96,164),rgb(171, 60, 114));
+#pv {
+    background-image: linear-gradient(135deg, rgb(239, 96, 164), rgb(171, 60, 114));
 }
 
-#pv:hover, #sshf:hover, #yum:hover, #madness:hover{
+#pv:hover, #sshf:hover, #yum:hover, #madness:hover {
     animation-name: rotate;
     animation-duration: 0.7s;
     animation-iteration-count: 1;
-  }
-
-#sshf{
-    background-image:linear-gradient(135deg,rgb(250, 152, 165),rgb(242,109,126));
 }
 
-
-#yum{
-    background-image:linear-gradient(135deg,rgb(243, 112, 180),rgb(179, 42, 113));
+#sshf {
+    background-image: linear-gradient(135deg, rgb(250, 152, 165), rgb(242, 109, 126));
 }
 
-#madness{
-    background-image:linear-gradient(135deg,rgba(225,25,69,255),rgba(135,25,69,255));
+#yum {
+    background-image: linear-gradient(135deg, rgb(243, 112, 180), rgb(179, 42, 113));
 }
 
-#frigid{
-    background-image:linear-gradient(135deg,rgb(19, 196, 255),rgb(38, 91, 109));
+#madness {
+    background-image: linear-gradient(135deg, rgba(225, 25, 69, 255), rgba(135, 25, 69, 255));
 }
-#frigid:hover #frigidh{
+
+#frigid {
+    background-image: linear-gradient(135deg, rgb(19, 196, 255), rgb(38, 91, 109));
+}
+#frigid:hover #frigidh {
     font-size: 312.5%;
 }
-#frigid:hover #frigidp{
+#frigid:hover #frigidp {
     font-size: 187.5%;
 }
-#frigid:hover #frigidi{
-    display:none;
+#frigid:hover #frigidi {
+    display: none;
 }
-#frigid:hover #cold{
-    display:block;
-}
-
-#frozen{
-    background-image:linear-gradient(135deg,rgb(0,79,128),rgb(0, 39, 63));
+#frigid:hover #cold {
+    display: block;
 }
 
-#frozen:hover #frozenh{
+#frozen {
+    background-image: linear-gradient(135deg, rgb(0, 79, 128), rgb(0, 39, 63));
+}
+
+#frozen:hover #frozenh {
     font-size: 312.5%;
 }
-#frozen:hover #frozenp{
+#frozen:hover #frozenp {
     font-size: 187.5%;
-    }
-#frozen:hover #frozeni{
-    display:none;
-    }
-#frozen:hover #cold{
-    display:block;
-    }   
-
-#coldlika{
-    background-image:linear-gradient(135deg,rgb(121, 171, 188),rgb(81, 116, 128));
+}
+#frozen:hover #frozeni {
+    display: none;
+}
+#frozen:hover #cold {
+    display: block;
 }
 
-#coldlika:hover #coldlikah{
+#coldlika {
+    background-image: linear-gradient(135deg, rgb(121, 171, 188), rgb(81, 116, 128));
+}
+
+#coldlika:hover #coldlikah {
     font-size: 312.5%;
 }
-#coldlika:hover #coldlikap{
+#coldlika:hover #coldlikap {
     font-size: 187.5%;
 }
-#coldlika:hover #coldlikai{
-    display:none;
+#coldlika:hover #coldlikai {
+    display: none;
 }
-#coldlika:hover #cold{
-    display:block;
-}
-
-#lotf{
-    background-image:linear-gradient(45deg,rgba(2,28,115,255),rgba(159,144,39,255));
+#coldlika:hover #cold {
+    display: block;
 }
 
-body:has(#lotf:hover) .card{
+#lotf {
+    background-image: linear-gradient(45deg, rgba(2, 28, 115, 255), rgba(159, 144, 39, 255));
+}
+
+body:has(#lotf:hover) .card {
     background-image: none;
     animation: colors 1s infinite;
-  }
-
-@keyframes colors{
-    0% {background-color:rgb(18, 42, 63);}
-    20% {background-color:rgba(2,28,115,255);}
-    40% {background-color:rgba(159,144,39,255);}
-    60% {background-color:rgba(255,255,255,255);}
-    80% {background-color:rgb(115,96,37)}
-    100% {background-color:rgb(18, 42, 63);}
 }
 
-
-#mu{
-    background-image:linear-gradient(45deg,rgba(225,11,24,255),rgba(126,38,17,255));
+@keyframes colors {
+    0% { background-color: rgb(18, 42, 63); }
+    20% { background-color: rgba(2, 28, 115, 255); }
+    40% { background-color: rgba(159, 144, 39, 255); }
+    60% { background-color: rgba(255, 255, 255, 255); }
+    80% { background-color: rgb(115, 96, 37); }
+    100% { background-color: rgb(18, 42, 63); }
 }
-#mu:hover, #alpha:hover, #kappa:hover, #noir:hover{
+
+#mu {
+    background-image: linear-gradient(45deg, rgba(225, 11, 24, 255), rgba(126, 38, 17, 255));
+}
+#mu:hover, #alpha:hover, #kappa:hover, #noir:hover {
     animation: scale 0.5s infinite;
 }
 
-#alpha{
-    background-image:linear-gradient(45deg,rgba(9,122,227,255),rgba(7,31,137,255));
+#alpha {
+    background-image: linear-gradient(45deg, rgba(9, 122, 227, 255), rgba(7, 31, 137, 255));
 }
 
-#kappa{
-    background-image:linear-gradient(45deg,rgb(96, 10, 230),rgb(143, 14, 204));
+#kappa {
+    background-image: linear-gradient(45deg, rgb(96, 10, 230), rgb(143, 14, 204));
 }
 
-#noir{
-    background-image:linear-gradient(45deg,rgba(59,59,59,255),rgba(15,15,15,255));
+#noir {
+    background-image: linear-gradient(45deg, rgba(59, 59, 59, 255), rgba(15, 15, 15, 255));
 }
 
-
-
-
-@keyframes shine{
+@keyframes shine {
     from {
         mask-position: 150%;
-      }
-      
-      to {
+    }
+    to {
         mask-position: 50%;
-      }
+    }
 }
 
 @keyframes rotate {
     0% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     25% {
-    transform: rotate(15deg);
+        transform: rotate(15deg);
     }
-
     75% {
-    transform: rotate(-15deg);
+        transform: rotate(-15deg);
     }
     100% {
-    transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 
-#cold{
-    display:none;
+#cold {
+    display: none;
 }
 
-@keyframes scale{
-    0% {transform: scale(1) translateY(0px);}
-    50% {transform: scale(1.2) translateY(10px);}
-    100% {transform: scale(1) translateY(0px);}
+@keyframes scale {
+    0% { transform: scale(1) translateY(0px); }
+    50% { transform: scale(1.2) translateY(10px); }
+    100% { transform: scale(1) translateY(0px); }
 }
